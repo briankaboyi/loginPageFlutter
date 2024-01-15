@@ -53,10 +53,45 @@ class LoginPage extends StatelessWidget {
         ),
         actions: [],
       ),
-      body:
+      body:/*
+       Column(
+       children:[
+        {
+          "image": Icon(Icons.handshake),
+          "title":"Welcome to Beamo"
+        }, {
+          "image": Icon(Icons.handshake),
+          "title":"login with email"
+        } ,{
+          "image": Icon(Icons.handshake),
+          "title":"Welcome to Google"
+        } ,{
+          "image": Icon(Icons.handshake),
+          "title":"Welcome to Facebook"
+        }
+       ].map((e)=>ButtonWidget(
+       widget:Row(
+       children:[
+       e["image"] as Widget,
+        TextWidget(
+          value: e["img"].toString(),
+          fontSize:11,
+          fontWeight:FontWeight.w400,
+          color:Color(0xFF000000),
+          textAlign:TextAlign.center),
+        )
+       ]
+
+
+       )
+       ))
+       )
+      mainAxisAlignment,Center(), Align(alignment: center)
+
+      */
           Column(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
         Container(
-          transform: Matrix4.translationValues(0, 60.0, 0),
+           transform: Matrix4.translationValues(0, 60.0, 0),
           child: Align(
               alignment: Alignment.center,
               child: TextWidget(
